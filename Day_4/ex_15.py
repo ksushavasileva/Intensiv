@@ -1,8 +1,12 @@
 import random
 number = random.randint(0, 1500)
 print(number)
-digital = input("введи цифру ")
-if digital in str(number):
-    print("True")
-else:
-    print("False")
+flag = False
+digital = int(input("введи цифру "))
+while number !=0:
+    ost = number % 10
+    if ost == digital:
+        flag = True
+    number = number // 10
+
+print(flag)
