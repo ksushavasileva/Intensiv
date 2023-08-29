@@ -6,4 +6,5 @@ for c in range(a):
         b.append(1)
     else: b.append(i)
 print(b)
+hello
 
